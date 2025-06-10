@@ -1,3 +1,19 @@
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,28 +21,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-  <title>Keshav Sharma | Robotics & AI Engineer</title>
-  <meta name="description" content="Portfolio of Keshav Sharma, a Robotics and AI Engineer." />
+
+  <!-- Put your site title here -->
+<title>Keshav Sharma | Robotics & AI Engineer</title>
+
+  <meta name="description" content="Portfolio of Keshav Sharma, a Robotics and AI Engineer.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords" content="Keshav Sharma, Robotics, AI, ROS, Gazebo, Machine Learning, Python, Engineering" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
+
+  <!-- ***** Header ***** -->
+
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
           <span>Keshav Sharma</span>
         </h1>
+        <!-- Put a small paragraph about yourself -->
         <p>A Robotics and AI Engineer based in Maryland, USA.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
@@ -34,116 +63,160 @@
   </header>
 
   <main role="main">
+
+    <!-- ***** Work ***** -->
+
     <section class="work" id="work">
       <div class="row">
-        <h2>My Projects</h2>
+        <h2>My Work</h2>
         <div class="work__boxes">
 
-          <!-- Project 1: Pick and Place Robot -->
+          <!-- Each div with the work__box class is a project. -->
+
           <div class="work__box">
             <div class="work__text">
               <h3>Autonomous Pick and Place Robot</h3>
-              <p>Designed a robot with SolidWorks and simulated in ROS2 & Gazebo. Used forward/inverse kinematics and teleoperation for object manipulation.</p>
+              <p>
+                Designed a robot with SolidWorks and simulated in ROS2 & Gazebo. Used forward/inverse kinematics and teleoperation for object manipulation.
+              </p>
               <ul class="work__list">
                 <li>SolidWorks</li>
                 <li>ROS2</li>
                 <li>Gazebo</li>
               </ul>
+
               <div class="work__links">
-                <a href="https://github.com/def-keshav/Pick-and-place-robot" class="link__text" target="_blank">GitHub Repo &rarr;</a>
-                  <img src="./images/github.svg" class="work__code" alt="Code">
+                <a href="https://github.com/def-keshav/Pick-and-place-robot" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <!-- ADD PROJECT IMAGE HERE -->
-              <img src="images\modeling.png" class="work__image" alt="Pick and Place Robot" />
+              <img src="./images/modeling.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
-          <!-- Project 2: Structure from Motion -->
           <div class="work__box">
             <div class="work__text">
               <h3>3D Reconstruction with SfM</h3>
-              <p>Built a full SfM pipeline in Python using OpenCV and Open3D to reconstruct colored 3D point clouds from image sequences.</p>
+              <p>
+                Built a full SfM pipeline in Python using OpenCV and Open3D to reconstruct colored 3D point clouds from image sequences.
+              </p>
               <ul class="work__list">
                 <li>Python</li>
                 <li>OpenCV</li>
                 <li>Open3D</li>
               </ul>
+
               <div class="work__links">
-                <a href="https://github.com/def-keshav/Structure-From-motion" class="link__text">GitHub Repo &rarr;</a>
+                <a href="https://github.com/def-keshav/Structure-From-motion">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
               </div>
             </div>
             <div class="work__image-box">
-              <!-- ADD PROJECT IMAGE HERE -->
-              <img src="images\WhatsApp Image 2025-06-09 at 4.34.45 PM.jpeg" class="work__image" alt="3D Reconstruction" />
+              <img src="./images/WhatsApp Image 2025-06-09 at 4.34.45 PM.jpeg" class="work__image" alt="Project 1" />
             </div>
           </div>
 
-          <!-- Project 3: Autonomous Car Navigation -->
           <div class="work__box">
             <div class="work__text">
               <h3>Autonomous Car Navigation with Deep Q-Networks</h3>
-              <p>Implemented a self-driving car simulation using DQN in ROS2 and Gazebo. Trained the agent with reward shaping, experience replay, and dueling network architecture to handle complex urban environments.</p>
+              <p>
+                Implemented a self-driving car simulation using DQN in ROS2 and Gazebo. Trained the agent with reward shaping, experience replay, and dueling network architecture to handle complex urban environments.
+              </p>
               <ul class="work__list">
                 <li>Python</li>
                 <li>Reinforcement Learning</li>
                 <li>ROS2 & Gazebo</li>
               </ul>
+
               <div class="work__links">
-                <a href="https://github.com/def-keshav/-Self-Driving-Car-Navigation-using-Deep-Q-Networks-DQN-" class="link__text">Code Repo &rarr;</a>
+                <a href="https://github.com/def-keshav/-Self-Driving-Car-Navigation-using-Deep-Q-Networks-DQN-">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
               </div>
             </div>
             <div class="work__image-box">
-              <!-- ADD PROJECT IMAGE HERE -->
-              <img src="images\Robot learning.png" class="work__image" alt="Autonomous Car DQN" />
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
             </div>
           </div>
-
         </div>
       </div>
     </section>
+
+    <!-- ***** About ***** -->
 
     <section class="about" id="about">
       <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <p>I’m a robotics engineer passionate about building intelligent systems that interact with the real world. With a background in mechanical engineering and a master's in robotics, I specialize in autonomous navigation, deep learning, and simulation systems.</p>
-            <a href="https://drive.google.com/file/d/1YcbD9i5tHkj26jDyFEM0jUkNnErn9ZXy/view?usp=sharing" class="btn" target="_blank">View Resume</a>
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I’m a robotics engineer passionate about building intelligent systems that interact with the real world. With a background in mechanical engineering and a master's in robotics, I specialize in autonomous navigation, deep learning, and simulation systems.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="https://drive.google.com/file/d/1YcbD9i5tHkj26jDyFEM0jUkNnErn9ZXy/view?usp=sharing" class="btn">My Resume</a>
           </div>
+
           <div class="about__photo-container">
-            <!-- ADD YOUR PHOTO HERE -->
-            <img class="about__photo" src="images\WhatsApp Image 2025-06-10 at 2.05.16 AM.jpeg" alt="Keshav Sharma" />
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/WhatsApp Image 2025-06-10 at 2.05.16 AM.jpeg" alt="" />
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- ***** Contact ***** -->
+
   <section class="contact" id="contact">
     <div class="row">
       <h2>Get in Touch</h2>
       <div class="contact__info">
-        <p>If you’d like to talk robotics, AI, or potential collaboration opportunities, feel free to drop me a message!</p>
-        <a href="mailto:ksharma7@umd.edu" class="btn">ksharma7@umd.edu</a>
+        <p>
+          If you’d like to talk robotics, AI, or potential collaboration opportunities, feel free to drop me a message!
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:keshav.sharma.090500@gmail.com" class="btn">you@example.com</a>
       </div>
     </div>
   </section>
 
+  <!-- ***** Footer ***** -->
+
   <footer role="contentinfo" class="footer">
     <div class="row">
+      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
-        <li><a href="https://github.com/def-keshav" target="_blank"><img src="./images/github.svg" alt="GitHub"></a></li>
-        <li><a href="https://linkedin.com/in/keshav-sharma-4260441b6" target="_blank"><img src="./images/linkedin.svg" alt="LinkedIn"></a></li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/def-keshav" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/keshav-sharma-4260441b6/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
       </ul>
-      <p>&copy; 2025 Keshav Sharma</p>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
     </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
   <script src="./index.js"></script>
 </body>
