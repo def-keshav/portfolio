@@ -611,3 +611,18 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+.work__image-box {
+  height: 250px; /* Set consistent container height */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.work__image {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
